@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+
+  dailyhot:
+    image: dailyhot
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dailyhot
+    restart: always
+    ports:
+      - "7890:6688"
